@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
@@ -11,8 +11,10 @@ const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
+  const [highlightHeading, setHighlightHeading] = useState("");
+  
+  
 
-  const pathUrl = usePathname();
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -27,6 +29,12 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  const handleClickHeaderItem=(data)=>{
+    console.log("DATA", data)
+    const path= data.path;
+    setHighlightHeading(`${path}`)
+  }
+console.log("highlightHeading",highlightHeading)
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
@@ -39,14 +47,14 @@ const Header = () => {
         <div className="flex items-center justify-between w-full xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/service-based/logo1.png"
               alt="logo"
               width={119.03}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/service-based/logo1.png"
               alt="logo"
               width={119.03}
               height={30}
@@ -137,8 +145,10 @@ const Header = () => {
                   ) : (
                     <Link
                       href={`${menuItem.path}`}
+                      onClick={()=>{handleClickHeaderItem(menuItem)}}
                       className={
-                        pathUrl === menuItem.path
+                        // `/${subPath}` === menuItem.path
+                        highlightHeading === menuItem.path
                           ? "text-primary hover:text-primary"
                           : "hover:text-primary"
                       }

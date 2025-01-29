@@ -182,14 +182,14 @@ const Contact = () => {
                 <h3 className="mb-4 font-medium text-black text-metatitle3 dark:text-white">
                   Our Loaction
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>Park Connect, Phase 1, Hinjawadi Rajiv Gandhi Infotech Park, Hinjawadi,Maharashtra, India</p>
               </div>
               <div className="5 mb-7">
                 <h3 className="mb-4 font-medium text-black text-metatitle3 dark:text-white">
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="#">skylogicsoftwaresolutions@gmail.com</a>
                 </p>
               </div>
               <div>
@@ -197,7 +197,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="#">+91 8411827991</a>
                 </p>
               </div>
             </motion.div>
