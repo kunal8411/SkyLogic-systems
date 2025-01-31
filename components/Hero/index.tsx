@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
+import styles from './Hero.module.css';
 const Hero = () => {
   const [email, setEmail] = useState("");
   const [isEmailSend, showEmailSendSuccess] = useState(false);
@@ -25,12 +25,12 @@ const Hero = () => {
 
   return (
     <>
-      <section className="pb-20 overflow-hidden pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <section className="pb-20 overflow-hidden pt-35 md:pt-40 xl:pb-25 xl:pt-46 herosection">
         <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥OUTSTANDING CUSTOMER SERVICE AT LOWER COST
+                🔥Transforming Businesses with Cutting-Edge IT Solutions
               </h4>
               <h1 className="pr-16 mb-5 text-3xl font-bold text-black dark:text-white xl:text-hero ">
                 Elevating Your Business
