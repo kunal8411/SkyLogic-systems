@@ -21,8 +21,14 @@
 
 @layer base {
   body {
-    @apply relative z-1 font-inter text-regular font-normal text-waterloo dark:text-manatee;
+    @apply relative font-normal z-1 font-inter text-regular text-waterloo dark:text-manatee;
   }
+}
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
 }
 
 @layer components {
@@ -93,7 +99,7 @@
 
 .blog-details ul,
 .blog-details ol {
-  @apply mb-10 list-inside list-disc text-titlebgdark;
+  @apply mb-10 list-disc list-inside text-titlebgdark;
 }
 
 .blog-details li,
@@ -102,7 +108,7 @@
 }
 
 .blog-details blockquote {
-  @apply relative z-10 mb-10 overflow-hidden rounded-sm bg-manatee p-8 text-center text-base font-medium italic text-black dark:bg-titlebgdark md:py-9 lg:px-10;
+  @apply relative z-10 p-8 mb-10 overflow-hidden text-base italic font-medium text-center text-black rounded-sm bg-manatee dark:bg-titlebgdark md:py-9 lg:px-10;
 }
 
 .blog-details blockquote::after {
@@ -116,12 +122,12 @@
 }
 
 pre {
-  @apply relative mb-2 rounded-lg bg-strokedark px-4 py-2;
+  @apply relative px-4 py-2 mb-2 rounded-lg bg-strokedark;
 }
 .prism-copy-button {
   @apply absolute right-2 top-2 h-[26px] rounded bg-white px-4 text-primary;
 }
 
 .active-tab {
-  @apply bg-stroke text-black dark:bg-blackho dark:text-white;
+  @apply text-black bg-stroke dark:bg-blackho dark:text-white;
 }
