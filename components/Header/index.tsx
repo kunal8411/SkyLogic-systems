@@ -47,14 +47,14 @@ console.log("highlightHeading",highlightHeading)
         <div className="flex items-center justify-between w-full xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/service-based/logo1.png"
+              src="/images/service-based/logo3blue1.png"
               alt="logo"
               width={119.03}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/service-based/logo1.png"
+              src="/images/service-based/logo3blue1.png"
               alt="logo"
               width={119.03}
               height={30}

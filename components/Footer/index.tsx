@@ -32,14 +32,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/service-based/logo1.png"
+                    src="/images/service-based/logo3blue1.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/service-based/logo1.png"
+                    src="/images/service-based/logo3blue1.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
@@ -55,7 +55,7 @@ const Footer = () => {
                 </p>
                 <a
                   href="#"
-                  className="font-medium text-black text-itemtitle dark:text-white"
+                  className="text-base font-medium text-black dark:text-white"
                 >
                   skylogicsoftwaresolutions@gmail.com
                 </a>

@@ -16,7 +16,7 @@ import Testimonial from "@/components/Testimonial";
 export const metadata: Metadata = {
   title: "SkyLogic Systems PVT LTD | Consulting | IT Services | AI",
   description: " ",
-  icons:"/images/service-based/logo2.png"
+  icons:"/images/service-based/logo4.png"
   // icon: "/path-to-your-logo/logo.png", 
 };
 
